@@ -1,0 +1,140 @@
+.section-tasks {
+  padding-top: 75px;
+  padding-bottom: 46px;
+  position: relative;
+  overflow: hidden;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    padding-top: 65px;
+    padding-bottom: 43px;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    padding-top: 95px;
+    padding-bottom: 25px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    transform: rotate(45deg) translatex(-70%);
+    width: 70px;
+    height: 70px;
+    background-color: #a4eecb;
+
+    // Медиазапрос для планшетов и выше
+    @media (min-width: 798px) {
+      display: none;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      left: 0;
+      transform: rotate(45deg) translatex(-70%);
+      width: 135px;
+      height: 135px;
+      background-color: #a4eecb;
+    }
+  }
+}
+
+.section-tasks_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    flex-direction: row;
+  }
+}
+
+.section-tasks_desc {
+  text-align: center;
+  margin-bottom: 50px;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    text-align: left;
+    margin-bottom: 0px;
+    width: 52.13%;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    margin-right: 95px;
+    width: 40.17%;
+  }
+}
+
+.section-tasks_desc .section-functional_title {
+  margin-bottom: 40px;
+  text-align: center;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    margin-bottom: 48px;
+    text-align: left;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    margin-bottom: 50px;
+  }
+}
+
+.section-tasks_desc .section-functional_header {
+  margin-bottom: 45px;
+  text-align: center;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    margin-bottom: 55px;
+  }
+}
+
+.section-tasks_img {
+  width: 202px;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    margin-right: 33px;
+    width: 270px;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    margin-right: 0;
+    width: auto;
+  }
+}
+
+.section-tasks_img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

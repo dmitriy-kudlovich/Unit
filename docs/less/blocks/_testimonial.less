@@ -1,0 +1,98 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 520px;
+  margin: 0 auto;
+
+  padding: 0 9px;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    padding: 0;
+
+    max-width: 467px;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    max-width: 750px;
+  }
+}
+
+.testimonial_text {
+  margin-bottom: 15px;
+
+  font-size: 14px;
+
+  color: #808080;
+  line-height: 2;
+  font-weight: 500;
+  text-align: center;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    margin-bottom: 25px;
+
+    line-height: 2.13;
+    font-size: 16px;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    margin-bottom: 55px;
+
+    line-height: 2.22;
+    font-size: 18px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+.testimonial_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    flex-direction: row;
+  }
+}
+
+.testimonial_user-photo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.testimonial_user-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #808080;
+  line-height: 1.3;
+}

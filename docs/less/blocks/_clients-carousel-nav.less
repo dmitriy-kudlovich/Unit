@@ -1,0 +1,78 @@
+.clients-carousel.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -20px;
+  transform: translate(-100%, 100%);
+
+  width: 52px;
+  height: 52px;
+
+  background-image: url("../img/carousel/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    margin-left: 0;
+    transform: translate(0, 25%);
+
+    bottom: unset;
+    top: 0;
+    left: 0;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    top: 0;
+    left: -40px;
+    transform: translate(-100%, 25%);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.7;
+  }
+}
+
+.clients-carousel.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translatey(100%);
+  margin-left: 20px;
+
+  width: 52px;
+  height: 52px;
+
+  background-image: url("../img/carousel/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    margin-left: 0;
+    left: unset;
+    bottom: unset;
+    top: 0;
+    right: 0;
+
+    transform: translate(0, 25%);
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    top: 0;
+    right: -40px;
+    transform: translate(100%, 25%);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.7;
+  }
+}

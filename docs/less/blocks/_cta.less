@@ -1,0 +1,81 @@
+.section-cta {
+  position: relative;
+
+  background-image: url("../img/cta/cta-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #4ca27e;
+
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    padding-bottom: 79px;
+  }
+
+  // Медиазапрос для десктопов
+  @media (min-width: 1230px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-position: center -70px;
+  }
+}
+
+.section-cta::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(10, 130, 78, 0.7);
+}
+
+.section-cta_text {
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 1.36;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 30px;
+
+  // Медиазапрос для планшетов и выше
+  @media (min-width: 798px) {
+    margin-bottom: 50px;
+  }
+}
+
+.button-cta {
+  padding: 24px 43px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #2bb279;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 2.8px;
+  border: none;
+
+  transition: background-color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: #ffffff;
+    background-color: #2bb279;
+  }
+}
