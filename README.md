@@ -5,7 +5,7 @@ Landing width adaptive design and OwlCarousel. **It designed to train myself in 
 [Watch demo online](http://kudlovichdv.com/porojects/unit/index.html)
 
 ## About the project
-A landing is made with OwlCarousel and mobile devices adaptation.
+It is a landing which is made with OwlCarousel and mobile devices adaptation.
 
 ## Used technologies:
 * HTML5
