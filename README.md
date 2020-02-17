@@ -13,3 +13,5 @@ It is a landing which is made with OwlCarousel and mobile devices adaptation.
 * less
 * jQuery
 * OwlCarousel
+
+![alt text](http://portfolio.kudlovichdv.com/img/section-portfolio/unit.png "Unit") 
