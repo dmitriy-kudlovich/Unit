@@ -1,5 +1,5 @@
 # Task management system "Unit"
-Landing width adaptive design and OwlCarousel. **It designed to train myself in web-design.**
+Landing width adaptive design and OwlCarousel. **It is developed to train myself in web-development.**
 
 ## Project link
 [Watch demo online](http://kudlovichdv.com/porojects/unit/index.html)
